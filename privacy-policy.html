@@ -17,15 +17,27 @@
   <meta name="twitter:title" content="Life Partner App - Privacy Policy">
   <meta name="twitter:description" content="Official Privacy Policy for Life Partner App. Learn how we collect, use, and delete your data.">
   <meta name="twitter:image" content="privacy-preview.png">
+
   <style>
     /* Global Styles */
-    body {
-      font-family: 'Helvetica Neue', Arial, sans-serif;
+    :root{
+      --bg: #FFF0FB;
+      --card: #ffffff;
+      --accent: #ff6b81;
+      --text: #243044;
+      --muted: #64748b;
+      --radius: 12px;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+
+    html, body {
+      height: 100%;
       margin: 0;
-      padding: 0;
-      background-color: #f9f9f9;
-      color: #333;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Helvetica Neue', Arial, sans-serif;
       line-height: 1.7;
+      min-height: 100%;
     }
 
     a {
@@ -36,13 +48,27 @@
       text-decoration: underline;
     }
 
+    /* Logo + Title Wrapper */
+    .title-wrapper{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      gap:12px;
+      flex-wrap:wrap;
+    }
+    .title-wrapper img{
+      width:50px;
+      height:50px;
+      border-radius:12px;
+    }
+
     /* Container */
     .container {
       max-width: 900px;
       margin: 40px auto;
-      background-color: #fff;
+      background-color: var(--card);
       padding: 30px 40px;
-      border-radius: 10px;
+      border-radius: var(--radius);
       box-shadow: 0 4px 20px rgba(0,0,0,0.1);
     }
 
@@ -87,8 +113,14 @@
 </head>
 <body>
   <div class="container">
-    <h1>Privacy Policy – Life Partner</h1>
-    <p><strong>Effective Date:</strong> 30 August 2025</p>
+    <!-- Header with Logo -->
+    <header>
+      <div class="title-wrapper">
+        <img src="life-partner-logo.png" alt="Life Partner Logo">
+        <h1>Privacy Policy – Life Partner</h1>
+      </div>
+      <p><strong>Effective Date:</strong> 30 August 2025</p>
+    </header>
 
     <h2>1. Information We Collect</h2>
     <p><strong>a) Information You Provide:</strong> Name, email, phone number, gender, date of birth, photos, preferences, messages, likes, and other profile content.</p>
@@ -130,6 +162,7 @@
     <h2>12. Contact Us</h2>
     <p>Email: <a href="mailto:lifepartner.dev@gmail.com">lifepartner.dev@gmail.com</a><br>
        Address: Life Partner Co., Ltd, Corner of Sapal Mar Ga Street, Sin Ma Lite Ward, Kamaryut Township, Yangon, Myanmar.</p>
+
     <hr>
     <p style="text-align:center; font-size:0.9rem; color:#777;">© 2025 Life Partner</p>
   </div>
