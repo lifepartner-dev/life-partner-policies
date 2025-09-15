@@ -34,6 +34,18 @@
     .container{max-width:900px;margin:36px auto;padding:28px}
     .card{background:var(--card);border-radius:var(--radius);box-shadow:0 8px 30px rgba(36,48,68,0.08);padding:28px}
     header{text-align:center}
+    .title-wrapper{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      gap:12px;
+      flex-wrap:wrap;
+    }
+    .title-wrapper img{
+      width:50px;
+      height:50px;
+      border-radius:12px;
+    }
     h1{margin:0;font-size:26px}
     p.lead{color:var(--muted);margin-top:8px}
     hr{border:none;border-top:1px solid #eef2f6;margin:20px 0}
@@ -51,7 +63,10 @@
   <div class="container">
     <div class="card">
       <header>
-        <h1>Life Partner App &mdash; Community Guidelines</h1>
+        <div class="title-wrapper">
+          <img src="life-partner-logo.png" alt="Life Partner Logo">
+          <h1>Life Partner App &mdash; Community Guidelines</h1>
+        </div>
         <p class="lead">Welcome to Life Partner App — a place to build genuine connections and discover your true partner in life.</p>
       </header>
 
